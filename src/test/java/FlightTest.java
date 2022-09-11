@@ -78,4 +78,11 @@ public class FlightTest {
     public void testRemainingSeats(){
         assertEquals(47, flight.remainingSeats());
     }
+
+    @Test
+    public void testBookPassenger(){
+        Passenger passenger4 = new Passenger("Emi", 6);
+        flight.bookPassenger(passenger4);
+        assertEquals(4, flight.getPassengers().size());
+    }
 }
