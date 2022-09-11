@@ -11,4 +11,8 @@ public class Pilot extends Staff {
         return pilotLicence;
     }
 
+    public String flyPlane(Plane plane){
+        return this.getName() + " is now flying a " + plane.getPlaneType();
+    }
+
 }

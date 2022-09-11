@@ -85,4 +85,9 @@ public class FlightTest {
         flight.bookPassenger(passenger4);
         assertEquals(4, flight.getPassengers().size());
     }
+
+    @Test
+    public void testFlyPlane(){
+        assertEquals("Tom is now flying a BOEING747", flight.getPilots().get(0).flyPlane(flight.getPlane()));
+    }
 }
