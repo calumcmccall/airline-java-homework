@@ -90,4 +90,9 @@ public class FlightTest {
     public void testFlyPlane(){
         assertEquals("Tom is now flying a BOEING747", flight.getPilots().get(0).flyPlane(flight.getPlane()));
     }
+
+    @Test
+    public void testTalkToPassengers(){
+        assertEquals("Welcome aboard the flight", flight.getCabinCrew().get(0).talkToPassengers());
+    }
 }

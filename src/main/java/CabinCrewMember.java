@@ -4,4 +4,8 @@ public class CabinCrewMember extends Staff {
         super(name, rank);
     }
 
+    public String talkToPassengers(){
+        return "Welcome aboard the flight";
+    }
+
 }
